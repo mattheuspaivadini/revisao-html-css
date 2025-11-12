@@ -1,0 +1,280 @@
+/* Primeira Questão */
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, sans-serif;
+}
+header
+{
+    background-color: #166534;
+    color: white;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo
+{
+    height: 48px;
+}
+h1
+{
+    font-size: 1.5em;
+}
+nav, ul
+{
+    list-style: none;
+    display: flex;
+    gap: 24px;
+
+}
+nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 1.125em;
+}
+nav ul li a:hover
+{
+    color: #D1FAE5;
+    text-decoration: none;
+    font-size: 1.125em;
+}
+
+/* Segunda Questão */
+.corpo
+{
+    background: linear-gradient(to right, #047857, #064E3B);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+}
+.corpo h2
+{
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.corpo p
+{
+    font-size: 1.25em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 32px auto;
+}
+
+.pai-dos-links
+{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.primeiro
+{
+    background-color: white;
+    color: #166534;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.primeiro:hover
+{
+    background-color: #E5E7EB;
+}
+.segundo
+{
+    border: 2px solid white;
+    color: white;
+    padding: 12px 32px;
+    border-radius: 9999px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.segundo:hover
+{
+    background-color: white;
+    color: #166534;
+}
+
+/* terceira questão */
+.cursos
+{
+    background-color: #F3F4F6;
+    padding: 64px 0;
+}
+.cursos-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.cursos h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+    text-align: center;
+    color: #166534;
+    margin-bottom: 48px;
+}
+.curso-card
+{
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.curso-card:hover
+{
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+.cursos-grid h3
+{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #047857;
+    margin-bottom: 8px;
+}
+.cursos-grid p
+{
+    color: #4B5563;
+}
+/* Quarta Questão */
+.numeros
+{
+    background-color: white;
+    padding: 64px 0;
+    margin-top: 64px;
+}
+.numeros h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+    text-align: center;
+    color: #166534;
+    margin-bottom: 48px;
+}
+.table-wrapper
+{
+    overflow-x: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.table-wrapper table
+{
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.table-wrapper thead
+{
+    background-color: #166534;
+    color: white;
+}
+.table-wrapper th td
+{
+    padding: 12px 24px;
+    text-align: left;
+    border-bottom: 1px solid #E5E7EB;
+}
+.table-wrapper th
+{
+    font-size: 0.875em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.table-wrapper tbody tr:nth-child(even)
+{
+    background-color: #F9FAFB;
+}
+.table-wrapper td:nth-child(2)
+{
+    font-size: 1.125em;
+    font-weight: 500;
+    color: #047857;
+}
+.table-wrapper td:nth-child(3)
+{
+    color: #4B5563;
+}
+/* Quinta Questão */
+
+.contato
+{
+    background-color: #F3F4F6;
+    padding: 62px 0;
+}
+.contato h2
+{
+    font-size: 2.25em;
+    font-weight: bold;
+    text-align: center;
+    color: #166534;
+    margin-bottom: 48px;
+}
+.contato form
+{
+    background-color: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 672px;
+    margin: 0 auto;
+}
+.form-group
+{
+    margin-bottom: 24px;
+}
+.form-group label
+{
+    display: block;
+    color: #374151;
+    font-size: 0.875em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.form-group input[type="text"], input[type="email"], textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #D1D5DB;
+    border-radius: 4px;
+
+}
+.form-group input[type="text"], input[type="email"], textarea:focus
+{
+    outline: none;
+    border-color: #34D399;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.5);
+    resize: vertical;
+}
+.form-group button[type="submit"]
+{
+    background-color: #166534;
+    color: white;
+    font-weight: bold;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+}
+.form-group button[type="submit"]:hover
+{
+    background-color: #065F46;
+    transition: background-color 0.3s ease;
+}
