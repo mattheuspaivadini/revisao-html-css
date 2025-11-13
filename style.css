@@ -179,7 +179,7 @@ nav ul li a:hover
     border-radius: 8px;
     overflow: hidden;
 }
-.table-wrapper thead
+.table-wrapper table thead
 {
     background-color: #166534;
     color: white;
@@ -196,7 +196,7 @@ nav ul li a:hover
     font-weight: bold;
     text-transform: uppercase;
 }
-.table-wrapper tbody tr:nth-child(even)
+.table-wrapper tbody
 {
     background-color: #F9FAFB;
 }
