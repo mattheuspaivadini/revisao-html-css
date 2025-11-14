@@ -1,82 +1,76 @@
-/* Primeira Questão */
 *
 {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body
 {
     font-family: Arial, sans-serif;
 }
-header
+
+.inicio
 {
     background-color: #166534;
     color: white;
-    display: flex;
     padding: 15px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
-.logo
+.inicio img
 {
     height: 48px;
 }
-h1
+.inicio h1
 {
     font-size: 1.5em;
 }
-nav, ul
+.inicio nav ul
 {
     list-style: none;
     display: flex;
     gap: 24px;
-
 }
-nav ul li a
+.inicio nav ul li a
 {
     color: white;
     text-decoration: none;
     font-size: 1.125em;
 }
-nav ul li a:hover
+.inicio nav ul li a:hover
 {
-    color: #D1FAE5;
-    text-decoration: none;
-    font-size: 1.125em;
+    color: #d1fae5;
 }
 
-/* Segunda Questão */
-.corpo
+/* Part II */
+.intro
 {
-    background: linear-gradient(to right, #047857, #064E3B);
+    background: linear-gradient(to right, #047857, #064e3b);
     color: white;
     padding: 80px 0;
     text-align: center;
 }
-.corpo h2
+.intro h2
 {
     font-size: 3em;
     font-weight: bold;
     margin-bottom: 24px;
 }
-.corpo p
+.intro p
 {
     font-size: 1.25em;
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto 32px auto;
 }
-
 .pai-dos-links
 {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 24px;
 }
-
-.primeiro
+.link1
 {
     background-color: white;
     color: #166534;
@@ -85,11 +79,11 @@ nav ul li a:hover
     font-weight: bold;
     text-decoration: none;
 }
-.primeiro:hover
+.link1:hover
 {
-    background-color: #E5E7EB;
+    background-color: #e5e7eb;
 }
-.segundo
+.link2
 {
     border: 2px solid white;
     color: white;
@@ -98,25 +92,16 @@ nav ul li a:hover
     font-weight: bold;
     text-decoration: none;
 }
-.segundo:hover
+.link2:hover
 {
     background-color: white;
     color: #166534;
 }
-
-/* terceira questão */
+/* Terceira Questão */
 .cursos
 {
-    background-color: #F3F4F6;
+    background-color: #f3f4f6;
     padding: 64px 0;
-}
-.cursos-grid
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 32px;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 .cursos h2
 {
@@ -125,6 +110,12 @@ nav ul li a:hover
     text-align: center;
     color: #166534;
     margin-bottom: 48px;
+}
+.cursos-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
 }
 .curso-card
 {
@@ -139,23 +130,24 @@ nav ul li a:hover
     transform: translateY(-4px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
-.cursos-grid h3
+.curso-card h3
 {
     font-size: 1.25em;
     font-weight: bold;
     color: #047857;
     margin-bottom: 8px;
 }
-.cursos-grid p
+.curso-card p
 {
-    color: #4B5563;
+    color: #4b5563;
 }
-/* Quarta Questão */
+
+/* Questão Quatro */
+
 .numeros
 {
     background-color: white;
     padding: 64px 0;
-    margin-top: 64px;
 }
 .numeros h2
 {
@@ -171,7 +163,7 @@ nav ul li a:hover
     max-width: 1000px;
     margin: 0 auto;
 }
-.table-wrapper table
+table
 {
     width: 100%;
     border-collapse: collapse;
@@ -179,45 +171,49 @@ nav ul li a:hover
     border-radius: 8px;
     overflow: hidden;
 }
-.table-wrapper table thead
+thead
 {
     background-color: #166534;
     color: white;
 }
-.table-wrapper th td
+th
 {
     padding: 12px 24px;
     text-align: left;
-    border-bottom: 1px solid #E5E7EB;
-}
-.table-wrapper th
-{
+    border-bottom: 1px solid #e5e7eb;
     font-size: 0.875em;
     font-weight: bold;
     text-transform: uppercase;
 }
-.table-wrapper tbody
+td
 {
-    background-color: #F9FAFB;
+    padding: 12px 24px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
 }
-.table-wrapper td:nth-child(2)
+
+.table-wrapper tbody tr:nth-child(even)
+{
+    background-color: #f9fafb;
+}
+.table-wrapper tbody td:nth-child(2)
 {
     font-size: 1.125em;
     font-weight: 500;
     color: #047857;
 }
-.table-wrapper td:nth-child(3)
+.table-wrapper tbody td:nth-child(3)
 {
-    color: #4B5563;
+    color: #4b5563;
 }
-/* Quinta Questão */
+/* Questão 5 */
 
-.contato
+.Contato
 {
-    background-color: #F3F4F6;
-    padding: 62px 0;
+    background-color: #f3f4f6;
+    padding: 64px 0;
 }
-.contato h2
+.Contato h2
 {
     font-size: 2.25em;
     font-weight: bold;
@@ -225,7 +221,7 @@ nav ul li a:hover
     color: #166534;
     margin-bottom: 48px;
 }
-.contato form
+.Contato form
 {
     background-color: white;
     padding: 32px;
@@ -246,18 +242,34 @@ nav ul li a:hover
     font-weight: bold;
     margin-bottom: 8px;
 }
-.form-group input[type="text"], input[type="email"], textarea
+.form-group input[type="text"]
 {
     width: 100%;
     padding: 10px;
-    border: 1px solid #D1D5DB;
+    border: 1px solid #d1d5db;
     border-radius: 4px;
-
-}
-.form-group input[type="text"], input[type="email"], textarea:focus
-{
     outline: none;
-    border-color: #34D399;
+    border-color: #34d399;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.5);   
+}
+.form-group input[type="email"]
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    border-color: #34d399;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.5);   
+}
+.form-group textarea
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    outline: none;
+    border-color: #34d399;
     box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.5);
     resize: vertical;
 }
@@ -267,6 +279,7 @@ nav ul li a:hover
     color: white;
     font-weight: bold;
     padding: 12px 24px;
+    margin-top: 24px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
@@ -275,6 +288,6 @@ nav ul li a:hover
 }
 .form-group button[type="submit"]:hover
 {
-    background-color: #065F46;
+    background-color: #065f46;
     transition: background-color 0.3s ease;
 }
